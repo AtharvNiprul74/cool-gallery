@@ -81,3 +81,26 @@ body{
 .cols-2{
     grid-column: span 2;
 }
+
+@media screen and (max-width:1280px) {
+    .container{
+        flex-direction:column;
+        padding: 10px;
+    }
+
+    .left-side{
+        padding: 20px;
+    }
+
+    .right-side{
+        grid-auto-rows: 220px;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+        margin:5px;
+    }
+}
